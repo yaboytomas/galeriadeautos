@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galería de Arte</title>
+    <style>
+        /* Estilos básicos para toda la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Estilos del menú de navegación */
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Estilos de las secciones principales */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Estilos de la galería */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Estilos de la sección de contacto */
+        .contact {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Estilos del formulario */
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        /* Oculta todas las secciones excepto la seleccionada */
+        section:not(:target) {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Mi Galería de Arte</h1>
+</header>
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#galeria">Galería de Arte</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+<div class="content">
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <!-- Agrega aquí el contenido para la sección "Inicio" -->
+    </section>
+    <section id="galeria">
+        <h2>Galería de Arte</h2>
+        <div class="gallery">
+            <!-- Agrega aquí tus imágenes de la galería -->
+            <!-- Ejemplo: -->
+            <div class="gallery-item">
+                <img src="artwork1.jpg" alt="Obra de arte 1">
+            </div>
+            <div class="gallery-item">
+                <img src="artwork2.jpg" alt="Obra de arte 2">
+            </div>
+            <!-- Repite para otras obras de arte -->
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact">
+            <form action="process_form.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>
