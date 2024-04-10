@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Galería de Arte</title>
+    <title>My Dream Car Collection</title>
     <style>
-        /* Estilos básicos para toda la página */
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        /* Estilos del encabezado */
         header {
             background-color: #333;
             color: #fff;
@@ -20,7 +19,6 @@
             padding: 20px;
         }
 
-        /* Estilos del menú de navegación */
         nav {
             background-color: #444;
             text-align: center;
@@ -33,14 +31,12 @@
             margin: 0 15px;
         }
 
-        /* Estilos de las secciones principales */
         .content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        /* Estilos de la galería */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -58,13 +54,11 @@
             display: block;
         }
 
-        /* Estilos de la sección de contacto */
         .contact {
             text-align: center;
             padding: 20px;
         }
 
-        /* Estilos del formulario */
         form {
             margin-top: 20px;
             text-align: center;
@@ -103,7 +97,6 @@
             background-color: #444;
         }
 
-        /* Oculta todas las secciones excepto la seleccionada */
         section:not(:target) {
             display: none;
         }
@@ -111,34 +104,45 @@
 </head>
 <body>
 <header>
-    <h1>Mi Galería de Arte</h1>
+   <h1> <u>Mis Autos Favoritos!</u> </h1>
 </header>
 <nav>
     <a href="#inicio">Inicio</a>
     <a href="#galeria">Galería de Arte</a>
     <a href="#contacto">Contacto</a>
 </nav>
+
 <div class="content">
     <section id="inicio">
-        <h2>Inicio</h2>
-        <!-- Agrega aquí el contenido para la sección "Inicio" -->
+        <h2>Bienvenidos a mi galeria de autos!</h2>
+        <p> El amor por la adrenalina me llevo a enamrarme con los autos. Mi primer auto fue un ford mustang
+            manual y ahora quiero tener todos los autos del mundo. Aca comparto contigo algunos de
+            mis favoritos autos.
+        <ul>
+            <li>Ferrari</li>
+            <li>Lamborghini</li>
+            <li>Pagani</li>
+            <li>Koenisegg</li>
+        </ul>
     </section>
+
     <section id="galeria">
-        <h2>Galería de Arte</h2>
+        <h2>Imagenes de autos como ferrari, lamborghini, pagani, koenigsegg, etc</h2>
+        <P> Aqui encontraras la mejor seleccion de autos.</P>
+
         <div class="gallery">
-            <!-- Agrega aquí tus imágenes de la galería -->
-            <!-- Ejemplo: -->
             <div class="gallery-item">
-                <img src="artwork1.jpg" alt="Obra de arte 1">
+                <img src="pagani.jpg" alt="Pagani Zonda">
             </div>
             <div class="gallery-item">
-                <img src="artwork2.jpg" alt="Obra de arte 2">
+                <img src="jesko.jpg" alt="Koenisegg Jesko">
             </div>
-            <!-- Repite para otras obras de arte -->
+
         </div>
     </section>
+
     <section id="contacto">
-        <h2>Contacto</h2>
+        <h2>Ponte en contacto conmigo hoy</h2>
         <div class="contact">
             <form action="process_form.php" method="post">
                 <label for="name">Nombre:</label>
@@ -154,6 +158,7 @@
             </form>
         </div>
     </section>
+
 </div>
 </body>
 </html>
