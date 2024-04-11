@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dream Car Collection</title>
     <style>
 
         body {
@@ -101,6 +100,7 @@
             display: none;
         }
     </style>
+    <title>My Dream Car Collection</title>
 </head>
 <body>
 <header>
@@ -114,7 +114,7 @@
 
 <div class="content">
     <section id="inicio">
-        <h2>Bienvenidos a mi galeria de autos!</h2>
+        <center> <h2>Bienvenidos a mi galeria de autos!</h2> </center>
         <p> El amor por la adrenalina me llevo a enamrarme con los autos. Mi primer auto fue un ford mustang
             manual y ahora quiero tener todos los autos del mundo. Aca comparto contigo algunos de
             mis favoritos autos.
@@ -127,22 +127,23 @@
     </section>
 
     <section id="galeria">
-        <h2>Imagenes de autos como ferrari, lamborghini, pagani, koenigsegg, etc</h2>
+        <center> <h2> Photos de los mejores autos del planeta </h2> </center>
         <P> Aqui encontraras la mejor seleccion de autos.</P>
 
         <div class="gallery">
             <div class="gallery-item">
-                <img src="pagani.jpg" alt="Pagani Zonda">
+                <div class="carousel">
+                    <img src="pagani.jpg" alt="Pagani Zonda">
+                    <img src="jesko.jpg" alt="Koenisegg Jesko">
+                    <button type="button">Configurame tomas haha!</button>
+                    <button type="button">Configurame tomas haha!</button>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="jesko.jpg" alt="Koenisegg Jesko">
-            </div>
-
         </div>
     </section>
 
     <section id="contacto">
-        <h2>Ponte en contacto conmigo hoy</h2>
+        <center> <h2>Ponte en contacto conmigo hoy</h2> </center>
         <div class="contact">
             <form action="process_form.php" method="post">
                 <label for="name">Nombre:</label>
@@ -161,4 +162,7 @@
 
 </div>
 </body>
+<footer>
+    <center> <p>Copyright 2024 Tomas Szabo Undurraga . All Rights Reserved.</p> </center>
+</footer>
 </html>
