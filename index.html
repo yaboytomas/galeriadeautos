@@ -49,10 +49,10 @@
             de mis marcas favoritas de autos:
             </p>
             <ul>
-            <li>Ferrari</li>
-            <li>Lamborghini</li>
-            <li>Pagani</li>
-            <li>Koenisegg</li>
+             <li>Ferrari</li>
+             <li>Lamborghini</li>
+             <li>Pagani</li>
+             <li>Koenisegg</li>
             </ul>
             <br>
             <br>
@@ -130,26 +130,30 @@
 
     <section id="contacto">
 
-            <center> <h1> <u> Ponte en contacto conmigo hoy </u> </h1>
+            <center><h1><u> Ponte en contacto conmigo hoy</u></h1></center>
 
-            <p> Te invitamos a explorar nuestra galería y sumergirte en el mundo de los superdeportivos.
-            Ya seas un entusiasta de los autos o simplemente alguien que aprecia la belleza y la
-            artesanía, nuestra galería tiene algo para todos. ¡Esperamos verte pronto!</p></center>
+            <center><p> Te invitamos a explorar nuestra galería y sumergirte en el mundo de los superdeportivos.
+                Ya seas un entusiasta de los autos o simplemente alguien que aprecia la belleza y la
+                artesanía, nuestra galería tiene algo para todos. ¡Esperamos verte pronto!</p></center>
 
-            <center><form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="numero">Numero Telefonico:</label>
-                <input type="text" id="numero" name="numero" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <br>
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <br>
-                <input type="submit" value="Enviar">
-            </form></center>
+        <center><form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email" >Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="tipo">Tipo de solicitud:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="compra">Consulta</option>
+                <option value="consulta">Compra</option>
+                <option value="venta">Venta</option>
+            </select>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form></center>
+
     </section>
 
 </body>
